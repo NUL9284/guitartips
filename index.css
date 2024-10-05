@@ -1,41 +1,84 @@
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
-    background: #9ba8ab;
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "section"
-    "footer";
+    background: #daf1de;
 }
 header{
+    background: #235347;
     padding: 20px;
-    background: #253545;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-header nav{
-    display: grid;
-    align-items: center;
+    display: flex;
     justify-content: center;
 }
-header ul{
-    display: inline-flex;
-    list-style-type: none;
+nav{
+    background: #163832;
+    display: flex;
+    justify-content: center;
 }
-header li a{
-    margin: 0 10px 0 10px;
+nav ul{
+    display: inline-flex;
+    list-style: none;
+    padding: 15px;
+}
+nav li a{
     color: white;
-    border-radius: 15px;
     text-decoration: none;
-    padding: 20px;
-    background: #172431;
+    background: #163832;
+    padding: 30px 60px;
     transition: 400ms ease-in-out;
 }
-header li a:hover{
-    background: #07355f;
-    box-shadow: #0f5291 0 0 90px 10px ;
+nav li a:hover{
+    background: #0b2b26;
+    color: cornflowerblue;
+}
+main{
+    display: flex;
+    flex-direction: column;  
+}
+main .fase-1{
+    color: green;
+    margin: 20px auto;
+    background: #afafaf;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+.fase-1 ul{
+    list-style-type: square;
+}
+.fase-1 a{
+    text-decoration: none;
+    color: green;
+}
+.fase-1 a:hover{
+    color:white;
+    cursor: pointer;
+}
+main .fase-2{
+    color: green;
+    margin: 20px auto;
+    background: #afafaf;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 20px;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: cornflowerblue;
 }
