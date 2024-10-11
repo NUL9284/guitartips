@@ -26,6 +26,7 @@ header{
     justify-content: space-between;
 }
 nav{
+    overflow: hidden;  
     position: relative;
     left: -100%;
     background: #036246;
