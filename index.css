@@ -34,6 +34,7 @@ nav{
     transition: 1s ease-in-out;
 }
 nav ul{
+    list-style-type: none;
     display: flex;
     flex-direction: column;
 }
@@ -55,10 +56,46 @@ nav a:hover{
 .labmenu{
     font-size: 30px;
     font-weight: bolder;
+    transition: 300ms ease-in-out;
 }
 #menu{
     display: none;
 }
 #menu:checked + nav{
     left: 0;
+}
+footer{
+    background: rgb(2, 27, 26);
+    padding: 20px;
+    display: flex;
+    color: white;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: cornflowerblue;
+}
+
+@media (min-width:770px) {
+    nav{
+        height: auto;
+        width: 100%;
+        left: 0;
+    }
+    nav ul{
+        justify-content: center;
+        flex-direction: row;
+        max-height: 75px; 
+    }
+    nav a{
+        min-width: 100px;
+    }
+    nav a:hover{
+        border-right: 0px;
+        border-bottom: white solid 5px;
+    }
+    .labmenu{
+        display: none;
+    }
 }
