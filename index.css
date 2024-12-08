@@ -1,0 +1,159 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background: #dfdfdf;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+}
+header{
+    padding: 20px 10px;
+    color: white;
+    background: #036246;
+    display: inline-flex;
+    justify-content: space-between;
+}
+nav{
+    z-index: 1000;
+    position: fixed;
+    top: 82px;
+    left: -100%;
+    background: #036246;
+    height: 100vh;
+    width: 70%;
+    transition: 1s ease-in-out;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+nav li{
+    margin: 10px 0;
+}
+nav a{
+    display: flex;
+    justify-content: center;
+    transition: 300ms ease-in-out;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+nav a:hover{
+    background: rgb(4, 138, 98);
+    border-right: white solid 5px;
+}
+.labmenu{
+    font-size: 30px;
+    font-weight: bolder;
+    transition: 300ms ease-in-out;
+}
+.labmenu:hover{
+    cursor: pointer;
+}
+#menu{
+    display: none;
+}
+#menu:checked + nav{
+    left: 0;
+}
+footer{
+    background: rgb(2, 27, 26);
+    padding: 20px;
+    display: flex;
+    color: white;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: cornflowerblue;
+}
+/*starting principal structure*/
+main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 30px;
+    align-items: center;
+}
+
+/* ------content------- */
+.a1 div{
+    margin: 0 auto;
+}
+.a1{
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 400px;
+    min-height: 200px;
+    background: #dfdfdf;
+    box-shadow: inset 0 15px 15px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+
+}
+.a1 h2, p{
+    margin-bottom: 20px;
+}
+.a1 a{
+    margin: 0 auto;
+}
+.a1 p{
+    transition: ease-in-out 300ms;
+    margin: 0 auto;
+}
+.a1 div{
+    position: relative;
+}
+.a1 div p{
+    position: absolute;
+    left: 10px;
+    bottom: 25px;
+}
+.a1 a .a1img1{
+    margin: 15px auto;
+    height: 400px;
+    width: 600px;
+}
+/* ------content------- */
+
+
+@media (min-width:770px) {
+    nav{
+        position: relative;
+        top: 0;
+        height: fit-content;
+        width: 100%;
+        left: 0;
+    }
+    nav ul{
+        justify-content: center;
+        flex-direction: row;
+        max-height: 75px; 
+    }
+    nav a{
+        min-width: 100px;
+    }
+    nav a:hover{
+        border-right: 0px;
+        border-bottom: white solid 5px;
+    }
+    .labmenu{
+        display: none;
+    }
+}
